@@ -2,17 +2,23 @@
 
 This project started as a very ambitious DevDay talk, and as such is full of cool ideas that will not necessarily be useful.
 
-The initial driver was that I wanted to do a talk about creating useful business software (This got a few groans - my previous talk had been about sci-fi user interfaces) utilising interesting new interface technology (Restoring some hope).
+The initial driver was that I wanted to do a talk about creating useful business software (This got a few groans - my previous talk had been about sci-fi user interfaces) utilising interesting new interface technology (Restoring some hope). Since Entelect sponsored a Raspberry Pi, I also needed to use that.
 
 So with that in mind, parts of this system will be somewhat over-engineered, not necessarily useful, or purely done because we found it interesting.
 
 ## Introduction
+
+Since I had found a solution (Business software that looks cool, utilises uncommon interfaces and involves a Pi), I just needed to find a problem for it.
 
 As software developers, we are always looking for new tools or processes to make our lives easier. This has led to Agile processes and Agile tools. Which unfortunately are often not very agile.
 
 So as software engineers, we know that the solution is to build more tools (Or create new processes)...
 
 The idea is to build tools that take our existing tools and processes and improve them in interesting (and quite possibly useless) ways.
+
+Two interesting ways to enhance our existing apps that we identified were:
+* Augmented view of the project board using your mobile phone
+* A sync system that watches the physical board through a camera and automatically updates the electronic system on changes.
 
 ## Goals
 There are two overarching goals that has driven most of the decisions:
@@ -30,14 +36,15 @@ From a system perspective, our goals include:
 ## Assumptions
 
 * Nobody wants another issue tracker, so it makes sense to integrate with an existing one.
+* The sync system will probably not be used in companies, so make it as fun to develop as possible and as cool to show off as possible.
 
 ## Philosophy
 
-As this is a pet project being developed for the learning experience, some 'bad' decisions will be made in the design and requirements and this is perfectly fine.
+As this is a pet project being developed for the learning experience, some 'bad' decisions will be made in the design and requirements and we are perfectly fine with this.
 
 The overarching goals here is to create something cool to show off, learn new stuff and have fun doing it.
 
-Having said all this, bad code is unacceptable. 
+Having said all this, bad code is unacceptable - We are trying to create good habits. 
 
 ## Significant Requirements
 
@@ -52,13 +59,13 @@ Having said all this, bad code is unacceptable.
 
 * As this is a pet project, time will be extremely constrained. 
 * Must use JIRA as a issue tracker as the team has experience with JIRA and atlassian provides open source licenses.
-* Must have a service layer allowing us to communicate with JIRA (and probably other API's)
+* Must have a service layer allowing us to communicate with JIRA (and probably other API's).
 * Mobile app will be developed on Android as the whole team is familiar with it and owns Android phones.
 * The system needs to run on cheap hardware as each project/physical board will likely run it's own system and we have a small budget.
 
 ## Architecture Style and Refinements
 
-The system will use a *shared repository* architecture since it will use JIRA as a data store.
+The system will use a *shared repository* architecture as all components will use JIRA as a data store.
 
 The individual component systems will also use a *layered* and *tiered* architecture to aid in maintainability of the system and allow users to host different components of the system on different hardware.
 
