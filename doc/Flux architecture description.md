@@ -42,7 +42,7 @@ The idea is to build tools that take our existing tools and processes and improv
 
 The system will use a *shared repository* architecture since it will use JIRA as a data store, with *layered* and *tiered* systems providing the necessary functionality.
 
-<img src="https://www.dropbox.com/s/2k30jsp7x825d92/Overview.png" />
+![Architecture Overview](https://raw.githubusercontent.com/riaancornelius/Flux/master/doc/Overview.png)
 
 ## Mechanisms
 
@@ -71,10 +71,6 @@ The system will use a *shared repository* architecture since it will use JIRA as
 <td>Easy way to notify clients to sync. Minimises polling which extends battery life and reduces data cost on mobile apps.</td>
 </tr>
 </table>
-
-## Logical view
-
-[Logical View](https://www.dropbox.com/s/7om6ftoetmob68e/LogicalView.png)
 
 ## Team Overview
 
