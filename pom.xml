@@ -28,7 +28,7 @@
         <android.plugin.version>3.8.0</android.plugin.version>
         <maven-resources-plugin.version>2.4.3</maven-resources-plugin.version>
         <emma.version>2.1.5320</emma.version>
-        <roboguice.version>3.0-alpha-1</roboguice.version>
+        <roboguice.version>2.0</roboguice.version>
 
         <android.avd.name>Android4</android.avd.name>
         <nonReleaseBuild>true</nonReleaseBuild>
