@@ -2,4 +2,4 @@ language: android
 android:
   components:
     - build-tools-19.0.2
-    - extra-android-support-11
+    - extra-android-support-19.0.1
